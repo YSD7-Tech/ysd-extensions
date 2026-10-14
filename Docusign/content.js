@@ -149,7 +149,7 @@ const observer = new MutationObserver((mutations) => {
 
                 banner.innerHTML = `
                     <strong style="font-size: 15px;">⚠️ EXTERNAL OR UNVERIFIED ${triggeredRule.brandName.toUpperCase()} LINK</strong><br>
-                    This email contains a <strong>${triggeredRule.brandName}</strong> link. Compromised partner accounts often send malicious links. Before clicking a link, pause and verify the message. If the email is unexpected, asks for information, or directs you to sign in or confirm an account, treat it as suspicious. If you are unsure, <strong>do not interact with the message.</strong>
+                    This email may contain a <strong>${triggeredRule.brandName}</strong> link. Compromised partner accounts often send malicious links. Before clicking a link, pause and verify the message. If the email is unexpected, asks for information, or directs you to sign in or confirm an account, treat it as suspicious. If you are unsure, <strong>do not interact with the message.</strong>
                 `;
 
                 msg.insertBefore(banner, msg.firstChild);
